@@ -1,7 +1,8 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const PORT = 3000;
-
+app.use(cors());
 const stations = [
   { id: 1, name: "Tbilisi" },
   { id: 2, name: "Poti" },
